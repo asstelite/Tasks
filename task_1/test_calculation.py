@@ -24,16 +24,14 @@ class SmokeTest(aetest.Testcase):
         except ZeroDivisionError:
             self.passx('Division by zero', from_exception=ZeroDivisionError("Sorry, I can't do it!"))
         else:
-            print('Result of divine function', divine(num1, num2))
-            self.passed('passed!!!')
+            self.passed('Passed, result of divine function: {}'.format(divine(num1, num2)))
 
     @test
     def test_add_function(self, num1, num2):
         if num1 < 0 or num2 < 0:
             self.skipped("One of arguments < 0")
         else:
-            print('Result of add function', add(num1, num2))
-            self.passed("passed!")
+            self.passed("Passed, result of add function: {}".format(add(num1, num2)))
 
 
 if __name__ == '__main__':
