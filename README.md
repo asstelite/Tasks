@@ -1,4 +1,4 @@
-# task
+# task_2
 # Python3.5.2
 1. Download files from folder task_2
 2. In terminal:
